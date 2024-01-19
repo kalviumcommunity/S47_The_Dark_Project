@@ -5,7 +5,7 @@ const app = express();
 //routes
 
 app.get('/', (req, res) => {
-    res.sendStatus("Hello NODE API");
+    res.send("Hello NODE API");
 })
 
 
