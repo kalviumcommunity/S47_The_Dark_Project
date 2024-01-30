@@ -1,12 +1,15 @@
 {
-  "dependencies": {
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "name": "s47_the_dark_project",
+  "description": "",
+  "version": "1.0.0",
+  "main": "routes.js",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
     "mongoose": "^8.1.1"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.3"
-  }
   "name": "s47_the_dark_project",
   "version": "1.0.0",
   "description": "",
@@ -24,9 +27,4 @@
   }
   "description": "setup dev enviroment",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
-}
+
