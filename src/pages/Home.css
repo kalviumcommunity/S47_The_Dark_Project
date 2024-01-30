@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    width: 300px;
+    height: 170px;
+    background-color: rgb(255, 95, 95);
+    margin: 20px;
+}
+
+.news-container, .videos-container{
+    background-color: rgb(0, 255, 132);
+    height: 450px;
+    width: 450px;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;  
+    background-color: rgb(0, 0, 0);
+}
+
+.notes-in-nc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 10px;
+    grid-gap: 10px;
+}
+.notes-in-nc div{
+    background-color: black;
+    color: wheat;
+    height: 30px;
+}
+
+.news-in-nc div{
+    background-color: black;
+    color: wheat;
+    height: 60px;
+    text-align: center;
+    margin: 10px;
+}
+
+.videos-in-nc div{
+    background-color: rgba(255, 255, 255, 0.947);
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+}
