@@ -7,7 +7,7 @@ const port = process.env.PUBLIC_PORT ?? 7000;
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'o_O',
+    message: 'Connection Status',
     database: isConnected() ? 'connected' : 'disconnected'
   })
 });
@@ -32,3 +32,4 @@ if (require.main === module) {
 }
 
 module.exports = app;
+
