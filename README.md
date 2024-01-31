@@ -4,4 +4,4 @@
 
 [Deployed Output by Netlify](https://s47-the-dark-project.netlify.app/)
 
-[Deployed Output by coludfare](https://s47-the-dark-project.pages.dev/)
+[Deployed Output by Cloudfare](https://s47-the-dark-project.pages.dev/)
