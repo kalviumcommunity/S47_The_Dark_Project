@@ -1,0 +1,147 @@
+[
+    {
+      "SERIAL": 1,
+      "TIME": "6:00 AM",
+      "TASK": "Full Stack",
+      "STATUS": "Done",
+      "REMARKS": "Good",
+      "DIFFICULTY": "Medium"
+    },
+    {
+      "SERIAL": 2,
+      "TIME": "8:00 AM",
+      "TASK": "DBMS",
+      "STATUS": "Done",
+      "REMARKS": "Amazing",
+      "DIFFICULTY": "Hard"
+    },
+    {
+      "SERIAL": 3,
+      "TIME": "11:00 AM",
+      "TASK": "DFD",
+      "STATUS": "Done",
+      "REMARKS": "ok",
+      "DIFFICULTY": "Easy"
+    },
+    {
+      "SERIAL": 4,
+      "TIME": "1:00 PM",
+      "TASK": "Android Studio",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Very Easy"
+    },
+    {
+      "SERIAL": 5,
+      "TIME": "3:00 PM",
+      "TASK": "Blender",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Intermediate"
+    },
+    {
+      "SERIAL": 6,
+      "TIME": "5:00 PM",
+      "TASK": "BOCS",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Medium"
+    },
+    {
+      "SERIAL": 7,
+      "TIME": "6:00 PM",
+      "TASK": "Problem Solving",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Hard"
+    },
+    {
+      "SERIAL": 8,
+      "TIME": "7:00 PM",
+      "TASK": "C++",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Easy"
+    },
+    {
+      "SERIAL": 9,
+      "TIME": "9:00 PM",
+      "TASK": "Java",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Very Easy"
+    },
+    {
+      "SERIAL": 10,
+      "TIME": "6:00 AM",
+      "TASK": "Full Stack",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Intermediate"
+    },
+    {
+      "SERIAL": 11,
+      "TIME": "8:00 AM",
+      "TASK": "DBMS",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Medium"
+    },
+    {
+      "SERIAL": 12,
+      "TIME": "11:00 AM",
+      "TASK": "DFD",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Hard"
+    },
+    {
+      "SERIAL": 13,
+      "TIME": "1:00 PM",
+      "TASK": "Android Studio",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Easy"
+    },
+    {
+      "SERIAL": 14,
+      "TIME": "3:00 PM",
+      "TASK": "Blender",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Very Easy"
+    },
+    {
+      "SERIAL": 15,
+      "TIME": "5:00 PM",
+      "TASK": "BOCS",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Intermediate"
+    },
+    {
+      "SERIAL": 16,
+      "TIME": "6:00 PM",
+      "TASK": "Problem Solving",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Medium"
+    },
+    {
+      "SERIAL": 17,
+      "TIME": "7:00 PM",
+      "TASK": "C++",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Hard"
+    },
+    {
+      "SERIAL": 18,
+      "TIME": "9:00 PM",
+      "TASK": "Java",
+      "STATUS": "Scheduled",
+      "REMARKS": "-",
+      "DIFFICULTY": "Easy"
+    }
+]
+  

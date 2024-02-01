@@ -1,0 +1,30 @@
+td {
+    text-align: right;
+}
+
+table{
+    background-color: rgb(83, 171, 248);
+    padding: 20px;
+}
+
+td, tr{
+    padding: 10px;
+    margin: 10px;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+}
+tr{
+    background-color: wheat;
+}
+.serial{
+    background-color: antiquewhite;
+}
+.todo{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,18 +1,21 @@
 import React from 'react'
 import './Home.css'
-function Home() {
+import { Link } from 'react-router-dom';
+function DummyHome() {
   return (
     <>
     <div className="content-container">
+         
         <div className="flex personal-container">
             <div className="box todolist">
-                <p>To-Do List here</p>
+                <p>To-Do List here (Data Added)</p>
                 <ul>
                     <li>"Task" Will do by 1</li>
                     <li>"Task" Will do by 2</li>
                     <li>"Task" Will do by 3</li>
                     <li>"Task" Will do by 4</li>
                 </ul>
+                <Link to="/todo"><button>View</button></Link>
             </div>
             <div className="box upcoming-events">
                 <p>Upcoming Events here</p>
@@ -58,4 +61,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default DummyHome;
