@@ -25,6 +25,7 @@ function DummyHome() {
                     <li>Scheduled event 3</li>
                     <li>Scheduled event 4</li>
                 </ul>
+                <Link to="/event"><button>View</button></Link>
             </div>
             <div className="box notes-container">
                 <p>Notes Here</p>
