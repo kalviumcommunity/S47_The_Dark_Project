@@ -57,3 +57,10 @@ p{
     text-align: center;
     margin: 10px;
 }
+
+.imp-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}

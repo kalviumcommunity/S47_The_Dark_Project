@@ -15,7 +15,7 @@ function DummyHome() {
                     <li>"Task" Will do by 3</li>
                     <li>"Task" Will do by 4</li>
                 </ul>
-                <Link to="/todo"><button>View</button></Link>
+                
             </div>
             <div className="box upcoming-events">
                 <p>Upcoming Events here</p>
@@ -25,7 +25,7 @@ function DummyHome() {
                     <li>Scheduled event 3</li>
                     <li>Scheduled event 4</li>
                 </ul>
-                <Link to="/event"><button>View</button></Link>
+                
             </div>
             <div className="box notes-container">
                 <p>Notes Here</p>
@@ -35,6 +35,11 @@ function DummyHome() {
                 <div>Note 3</div>
                 <div>Note 4</div>
                 </div>
+            </div>
+            <div className="imp-links">
+                <div><Link to="/todo"><button>View locally important json data</button></Link></div>
+                <div><Link to="/event"><button>View data fetched from mongo db</button></Link></div>
+                <div><Link to="/userform"><button>CRUD Operations performed here</button></Link></div>                
             </div>
         </div>
         <div className="flex online-container">
