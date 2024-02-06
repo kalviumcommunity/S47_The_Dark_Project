@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Todo from './pages/Todo/Todo'
 import Event from './pages/Event/Event'
+import UserForm from './pages/form/UserForm'
+import CreateUser from './pages/form/CreateUser/CreateUser'
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Todo" element={<Todo />} />
           <Route path="/event" element={<Event />} />
+
+          <Route path="/userform" element={<UserForm />} />
+          <Route path="/createuser" element={<CreateUser />} />
         </Routes>
       </Router>
     </>
