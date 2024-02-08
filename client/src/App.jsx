@@ -4,7 +4,8 @@ import Home from './pages/Home'
 import Todo from './pages/Todo/Todo'
 import Event from './pages/Event/Event'
 import UserForm from './pages/form/UserForm'
-import CreateUser from './pages/form/CreateUser/CreateUser'
+import CreateUser from './pages/form/EditUser/CreateUser'
+import UpdateUser from './pages/form/EditUser/UpdateUser'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
           <Route path="/userform" element={<UserForm />} />
           <Route path="/createuser" element={<CreateUser />} />
+          <Route path="/updateusers/:id" element={<UpdateUser />} />
         </Routes>
       </Router>
     </>
