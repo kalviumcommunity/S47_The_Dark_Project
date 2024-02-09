@@ -4,10 +4,18 @@ const mongoose = require('mongoose');
 const app = express();
 const UserModel = require('./model');
 const port = 3000;
+const joi = require('joi')
 
 require('dotenv').config();
 app.use(cors());
 app.use(express.json());
+
+const updateSchema = joi.object({
+    name: joi.string().required(),
+    email: joi.string().email().required(),
+    gender: joi.string().required(),
+    age: joi.number().required()
+})
 
 const uri = process.env.MONGODB_URI;
 mongoose.connect(uri)
@@ -22,6 +30,7 @@ mongoose.connect(uri)
 
         //Create operation below
         app.post('/users', (req, res) => {
+
             let { name, email, gender, age } = req.body;
             age = parseInt(age,10)
             console.log(req.body)
@@ -52,10 +61,15 @@ mongoose.connect(uri)
         // });
 
         app.put('/updateusers/:_id', (req, res) => {
-            const id = req.params._id;
-            UserModel.findByIdAndUpdate({_id:id}, {name: req.body.name, email: req.body.email, age: req.body.age, gender: req.body.gender})
-            .then(res => res.json(res))
-            .catch(err => console.log(err))
+            const {error,value} = updateSchema.validate(req.body)
+            if(error){
+                console.log(error.details)
+            }else{
+                const id = req.params._id;
+                UserModel.findByIdAndUpdate({_id:id}, {name: req.body.name, email: req.body.email, age: req.body.age, gender: req.body.gender})
+                .then(res => res.json(res))
+                .catch(err => console.log(err))    
+            }
         })
 
         // app.delete('/usersdelete/:id', (req, res) => {
