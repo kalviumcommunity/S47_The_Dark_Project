@@ -5,10 +5,16 @@ const app = express();
 const UserModel = require('./model');
 const port = 3000;
 const joi = require('joi')
+const errorHandler = require('./middleware/errorHandler')
+
+
 
 require('dotenv').config();
 app.use(cors());
 app.use(express.json());
+app.use(errorHandler);
+
+
 
 const updateSchema = joi.object({
     name: joi.string().required(),
@@ -16,6 +22,8 @@ const updateSchema = joi.object({
     gender: joi.string().required(),
     age: joi.number().required()
 })
+
+
 
 const uri = process.env.MONGODB_URI;
 mongoose.connect(uri)
@@ -28,7 +36,6 @@ mongoose.connect(uri)
             })
         })
 
-        //Create operation below
         app.post('/users', (req, res) => {
 
             let { name, email, gender, age } = req.body;
@@ -38,27 +45,6 @@ mongoose.connect(uri)
             .then(userdata => res.json(userdata))
             .catch(err => console.log(err))
         })
-
-        //Update and delete operations below
-        // app.put('/users/:id', (req, res) => {
-        //     let { name, email, gender, age } = req.body;
-        //     age = parseInt(age,10)
-        //     console.log(req.body)
-        //     UserModel.findByIdAndUpdate(req.params.id, { name, email, gender, age })
-        //     .then(userdata => res.json(userdata))
-        //     .catch(err => console.log(err))
-        // })
-
-        // app.put('/updateusers/:_id', async (req, res) => {
-        //     try {
-        //       const { _id } = req.params;
-        //       const updatedUser = req.body; // Assuming the updated user data is sent in the request body
-        //       const user = await User.findByIdAndUpdate(_id, updatedUser, { new: true });
-        //       res.json(user);
-        //     } catch (error) {
-        //       res.status(500).json({ message: error.message });
-        //     }
-        // });
 
         app.put('/updateusers/:_id', (req, res) => {
             const {error,value} = updateSchema.validate(req.body)
@@ -71,14 +57,6 @@ mongoose.connect(uri)
                 .catch(err => console.log(err))    
             }
         })
-
-        // app.delete('/usersdelete/:id', (req, res) => {
-        //     UserModel.findByIdAndDelete({ _id: id })
-        //     .then(res => res.json(res))
-        //     .catch(err => console.log(err))
-        //     // .then(userdata => res.json(userdata))
-        //     // .catch(err => console.log(err))
-        // })
 
         app.delete('/usersdelete/:id', (req, res) => {
             const id = req.params.id;
