@@ -1,8 +1,10 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const PORT = process.env.PORT || 3000;
+const jwt = require('jsonwebtoken');
 
 const app = express();
+JWT_SECRET_KEY = 'sakshamgupta123';
 app.use(express.json());
 app.use(cookieParser());
 
@@ -11,13 +13,13 @@ const users = [
   { username: 'user2', password: 'password2' }
 ];
 
-const authenticateUser = (req, res, next) => {
-  const { username } = req.cookies;
-  if (!username) {
-    return res.status(401).json({ error: 'Not authenticated' });
-  }
-  next();
-};
+// const authenticateUser = (req, res, next) => {
+//   const { username } = req.cookies;
+//   if (!username) {
+//     return res.status(401).json({ error: 'Not authenticated' });
+//   }
+//   next();
+// };
 
 // app.post('/login', (req, res) => {
 //   const { username, password } = req.body;
@@ -43,7 +45,7 @@ app.post('/login', (req, res) => {
   res.json({ success: true });
 });
 
-function authenticateToken(req, res, next) {
+function authenticateUser(req, res, next) {
 const token = req.cookies.token;
 
 if (!token) {
